@@ -1,16 +1,12 @@
+import SilverWare from '../SilverWare/SilverWare'
+
 const DinnerSupplies = ({guestList}) => {
     return (
         <>
         <h2>Dinner Supplies</h2>
-        <div>
-            Spoons: {guestList.length * 2}
-        </div>
-        <div>
-            Forks: {guestList.length * 2}
-        </div>
-        <div>
-            Knives: {guestList.length * 2}
-        </div>
+        <SilverWare name="Spoons" guestList={guestList} />
+        <SilverWare name="Forks" guestList={guestList} />
+        <SilverWare name="Knives" guestList={guestList} />
         </>
     )
 }
