@@ -1,6 +1,15 @@
 const GuestList = ({guestList}) => {
     console.log(guestList)
     return (
+        <>
+        <h2>Guest List</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Kid's Meal</th>
+          </tr>
+        </thead>
         <tbody>
         {guestList.map(guest => (
           <tr key={guest.id}>
@@ -9,6 +18,8 @@ const GuestList = ({guestList}) => {
           </tr>
         ))}
       </tbody>
+      </table>
+      </>  
     )
 }
 
